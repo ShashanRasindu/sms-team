@@ -1,27 +1,27 @@
-var customers = [
+var batch = [
     {
-        id:"C001",
-        name:"Kasun",
-        address:"Galle"
+        id:"B001",
+        name:"19.1 IJSE",
+
     },
     {
-        id:"C002",
-        name:"Nuwan",
-        address:"Panadura"
+        id:"B002",
+        name:"19.2 IJSE",
+
     }
 ];
-var items = [
+var course = [
     {
-        code:"I001",
-        description:"Soap",
-        qtyOnHand:20,
-        unitPrice:200.00
+        id:"IJ001",
+        name:"DEP",
+        description:"dep in first",
+        duration:4
     },
     {
-        code:"I002",
-        description:"Pencil",
-        qtyOnHand:20,
-        unitPrice:10.00
+        id:"IJ002",
+        name:"CMJD",
+        description:"cmjd is second",
+        duration:12
     }
 ];
-var orders=[];
+var register=[];
