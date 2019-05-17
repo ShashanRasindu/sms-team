@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Modern POS 2019 - DEP3 Edition">
+    <title>Modern POS · DEP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Place Order Styles -->
+    <link rel="stylesheet" href="css/place-order.css">
+
+    <style>
+        #new{
+            left:200%;
+        }
+        #modelbox{
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Sudent Registration Name</a>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-customers.html">
+                            <i class="fas fa-user-friends"></i>
+                            Manage Coures
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage-items.html">
+                            <i class="fas fa-sitemap"></i>
+                            Manage Batches
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="place-order.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Register Students
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Reister Students</h1>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Add New
+
+                </button>
+                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div  class="modal-dialog" role="document">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New Student Registration</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>Student ID :</label>
+                                        <label id="lblnewStudentID" class="form-control"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>Student Name :</label>
+                                        <label id="lblnewStudentName" class="form-control"></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label>Student Contact Number :</label>
+                                        <label id="lblnewStudentContact" class="form-control"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+
+                <div class="row border-bottom" style="margin-top: 10px;">
+                    <div class="col-12 col-lg-2">
+                        <div class="form-group">
+                            <label>Select Student ID</label>
+                            <select id="cmbStudentID" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div id="button" class="col-12 col-lg-10">
+
+                        <!--<label>Batch Name</label>-->
+                        <!--<label id="lblBatchName" class="form-control"></label>-->
+                    </div>
+                </div>
+                <!--<div class="row border-bottom" style="margin-top: 10px;">-->
+                    <!--<div class="col-12">-->
+                        <!--<div class="form-group">-->
+                            <!--<div class="col-12 col-lg-2">-->
+                            <!--<label>Select Student ID :</label>-->
+                            <!--<select id="cmbStudentID" class="form-control" style="position: relative; float: left">-->
+                            <!--</select>-->
+                                <!--<span id="span" style="position: relative; float: left">-->
+                            <!--<button class="btn btn-primary">Add New</button>-->
+                                <!--</span>-->
+                        <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-bottom">
+                    <div class="col-12 col-lg-12">
+                        <div class="form-group">
+                            <label>Student Name :</label>
+                            <label id="lblStudentName" class="form-control"></label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row border-bottom" style="margin-top: 10px;">
+                    <div class="col-12 col-lg-2">
+                        <div class="form-group">
+                            <label>Course</label>
+                            <select id="cmbCouresID" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-10">
+                        <label>Course Name</label>
+                        <label id="lblCourseName" class="form-control"></label>
+                    </div>
+                </div>
+
+                <div class="row border-bottom" style="margin-top: 10px;">
+                    <div class="col-12 col-lg-2">
+                        <div class="form-group">
+                            <label>Batch</label>
+                            <select id="cmbBatchID" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-10">
+                        <label>Batch Name</label>
+                        <label id="lblBatchName" class="form-control"></label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-right">
+                    <button class="btn btn-primary">Register</button>
+                </div>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-12">
+                        <table id="tblStudentsRegister" class="table table-bordered table-hover">
+                            <colgroup>
+                                <col style="width:100px;">
+                                <col>
+                                <col style="width:100px;">
+                                <col style="width:200px;">
+                                <col style="width:200px;">
+                                <col style="width:100px;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>Course ID</th>
+                                <th>Course Name</th>
+                                <th>Batch ID</th>
+                                <th>Batch Name</th>
+                                <th></th>
+
+                            </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>C001</td>
+                                <td>DEP</td>
+                                <td>C001</td>
+                                <td>C001</td>
+                                <td></td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top: 10px;margin-bottom: 20px;">
+
+
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/database.js"></script>
+<script src="js/place-order-controller.js"></script>
+</body>
+</html>
