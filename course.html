@@ -65,24 +65,24 @@
                 <div class="row">
                     <div class="col col-12 col-lg-4">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Course ID">
+                            <input id="#txtCourseID" type="text" class="form-control" placeholder="Enter Course ID">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Course Name">
+                            <input id="#txtCourseName" type="text" class="form-control" placeholder="Enter Course Name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Discription">
+                            <input id="#txtDescription" type="text" class="form-control" placeholder="Enter Description">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Duration">
+                            <input id="#txtDuration" type="text" class="form-control" placeholder="Enter Duration">
                         </div>
                         <div class="form-group text-center">
-                            <button class="btn btn-primary">Save</button>
-                            <button class="btn btn-success">Clear</button>
+                            <button id="#btnSave" class="btn btn-primary">Save</button>
+                            <button id="#btnClear" class="btn btn-success">Clear</button>
                         </div>
                     </div>
                     <div class="col col-12 col-lg-8">
-                        <table class="table table-bordered table-hover">
+                        <table id="#tblCourse" class="table table-bordered table-hover">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
@@ -98,13 +98,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>I001</td>
-                                <td>Soap</td>
-                                <td>15</td>
-                                <td>
-                                    <i class="fas fa-trash"></i>
-                                </td>
+                            <!--<tr>-->
+                                <!--<td>I001</td>-->
+                                <!--<td>Soap</td>-->
+                                <!--<td>15</td>-->
+                                <!--<td>-->
+                                    <!--<i class="fas fa-trash"></i>-->
+                                <!--</td>-->
                             </tr>
 
                             </tbody>
@@ -115,6 +115,11 @@
         </main>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/database.js"></script>
+<script src="js/ManageCourse.js"></script>
 
 </body>
 </html>
