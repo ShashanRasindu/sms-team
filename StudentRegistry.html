@@ -85,25 +85,28 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="form-group">
                                         <label>Student ID :</label>
-                                        <label id="lblnewStudentID" class="form-control"></label>
+                                        <!--<label id="lblnewStudentID" class="form-control"></label>-->
+                                        <input type="text" class="form-control" id="lblnewStudentID" placeholder="Student ID">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-12">
                                     <div class="form-group">
                                         <label>Student Name :</label>
-                                        <label id="lblnewStudentName" class="form-control"></label>
+                                        <!--<label id="lblnewStudentName" class="form-control"></label>-->
+                                        <input type="text" class="form-control" id="lblnewStudentName" placeholder="Student Name">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-12">
                                     <div class="form-group">
                                         <label>Student Contact Number :</label>
-                                        <label id="lblnewStudentContact" class="form-control"></label>
+                                        <!--<label id="lblnewStudentContact" class="form-control"></label>-->
+                                        <input type="text" class="form-control" id="lblnewStudentContact" placeholder="Contace Number">
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" id="btnsavestudent" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
@@ -184,7 +187,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 text-right">
-                    <button class="btn btn-primary">Register</button>
+                    <button id="Registerbutton" class="btn btn-primary">Register</button>
                 </div>
 
                 <div class="row" style="margin-top: 20px;">
@@ -210,14 +213,6 @@
 
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>C001</td>
-                                <td>DEP</td>
-                                <td>C001</td>
-                                <td>C001</td>
-                                <td></td>
-
-                            </tr>
                             </tbody>
                         </table>
 
@@ -236,6 +231,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/database.js"></script>
-<script src="js/place-order-controller.js"></script>
+<script src="js/StudentRegistry.js"></script>
 </body>
 </html>
