@@ -26,3 +26,7 @@ table td:last-child:hover{
 table td, table th{
     vertical-align: middle !important;
 }
+#combo{
+    width: 20px;
+    
+}
